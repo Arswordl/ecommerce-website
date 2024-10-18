@@ -1,153 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>eBook and Training Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-        .product-list, .training-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .product, .training {
-            background-color: white;
-            padding: 15px;
-            margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 30%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .product img, .training img {
-            max-width: 100%;
-            height: auto;
-        }
-        .product h2, .training h2 {
-            color: #333;
-            font-size: 1.5em;
-        }
-        .product p, .training p {
-            font-size: 1em;
-            color: #555;
-        }
-        .product .price, .training .price {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        a {
-            color: white;
-            background-color: #3498db;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>DIGITAL WORLD</h1>
-    </header>
+<header>
+    <h1>DIGITAL WORLD</h1>
+    <button class="menu-toggle" id="toggle-menu">Menu</button> <!-- Button to toggle the menu -->
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- Product Section -->
-        <h2>eBooks</h2>
-        <div class="product-list">
-            <div class="product">
-                <img src="images/social_media.jpg" alt="Social Media Growth eBook">
-                <h2>Grow Your Social Media Accounts</h2>
-                <p>Learn how to grow your Facebook, WhatsApp, Instagram, and other social media accounts effectively.</p>
-                <p class="price">Price: $20</p>
-                <a href="#">Buy Now</a>
-            </div>
-
-            <div class="product">
-                <img src="images/website_creation.jpg" alt="Website Creation eBook">
-                <h2>How to Create Websites</h2>
-                <p>This eBook walks you through creating professional websites from scratch using modern tools.</p>
-                <p class="price">Price: $25</p>
-                <a href="#">Buy Now</a>
-            </div>
-
-            <div class="product">
-                <img src="images/seo.jpg" alt="SEO Optimization eBook">
-                <h2>Master SEO for Your Website</h2>
-                <p>Optimize your website's SEO to rank higher on Google and attract more visitors organically.</p>
-                <p class="price">Price: $15</p>
-                <a href="#">Buy Now</a>
-            </div>
-
-            <div class="product">
-                <img src="images/content_marketing.jpg" alt="Content Marketing eBook">
-                <h2>Content Marketing Strategies</h2>
-                <p>Develop powerful content marketing strategies to grow your business and online presence.</p>
-                <p class="price">Price: $18</p>
-                <a href="#">Buy Now</a>
-            </div>
-
-            <div class="product">
-                <img src="Blue/Teaming.jpg" alt="Blue Teaming(Defensive Hacking)">
-                <h2>Blue Teaming(Defensive Hacking)</h2>
-                <p>Get started with affiliate marketing and learn how to generate passive income online.</p>
-                <p class="price">Price: $22</p>
-                <a href="#">Buy Now</a>
-            </div>
-        </div>
-
-        <!-- Training Section -->
-        <h2>Training Services</h2>
-        <div class="training-list">
-            <div class="training">
-                <img src="images/ethical_hacking.jpg" alt="Ethical Hacking Training">
-                <h2>Ethical Hacking Training</h2>
-                <p>Join our comprehensive ethical hacking training course and become proficient in cybersecurity.</p>
-                <p class="price">Price: $100</p>
-                <a href="#">Join Now</a>
-            </div>
-
-            <div class="training">
-                <img src="images/social_media_training.jpg" alt="Social Media Marketing Training">
-                <h2>Social Media Marketing Training</h2>
-                <p>Learn how to market effectively on Facebook, Instagram, WhatsApp, and other social platforms.</p>
-                <p class="price">Price: $80</p>
-                <a href="#">Join Now</a>
-            </div>
-        </div>
-
+    <!-- Sidebar Menu Section -->
+    <div id="sidebar" class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Contact Team to Design Your Website</a></li>
+            <li><a href="#">Get a Team to Work on Your Project</a></li>
+            <li><a href="#">Get a Hacker</a></li>
+        </ul>
     </div>
 
-    <footer>
-        <p>&copy; 2024 eBook and Training Store | All Rights Reserved</p>
-    </footer>
+    <!-- Main Content Section -->
+    <div class="product-list">
+        <h2>eBooks</h2>
+        <div class="product">
+            <img src="images/social_media.jpg" alt="">
+            <h2>Grow Your Social Media Accounts</h2>
+            <p>Learn how to grow your Facebook, WhatsApp, Instagram, and other social media accounts effectively.</p>
+            <p class="price">Price: $20</p>
+            <button class="buy-button">Buy Now</button>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
 
+        <div class="product">
+            <img src="images/website_creation.jpg" alt="">
+            <h2>Coding the Websites You Imagine</h2>
+            <p>This eBook walks you through creating professional websites from scratch using modern tools.</p>
+            <p class="price">Price: $25</p>
+            <button class="buy-button">Buy Now</button>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/seo.jpg" alt="">
+            <h2>Master SEO for Your Website</h2>
+            <p>Optimize your website's SEO to rank higher on Google and attract more visitors organically.</p>
+            <p class="price">Price: $15</p>
+            <button class="buy-button">Buy Now</button>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/content_marketing.jpg" alt="">
+            <h2>Content Marketing Strategies</h2>
+            <p>Develop powerful content marketing strategies to grow your business and online presence.</p>
+            <p class="price">Price: $18</p>
+            <button class="buy-button">Buy Now</button>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/blue_teaming.jpg" alt="">
+            <h2>Blue Teaming (Defensive Hacking)</h2>
+            <p>Get started with affiliate marketing and learn how to generate passive income online.</p>
+            <p class="price">Price: $22</p>
+            <button class="buy-button">Buy Now</button>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2>Training Services</h2>
+    <div class="training-list">
+        <div class="training">
+            <img src="images/ethical_hacking.jpg" alt="Ethical Hacking Training">
+            <h2>Ethical Hacking Training</h2>
+            <p>Join our comprehensive ethical hacking training course and become proficient in cybersecurity.</p>
+            <p class="price">Price: $100</p>
+            <button class="join-button">Join Now</button>
+        </div>
+
+        <div class="training">
+            <img src="images/social_media_training.jpg" alt="Social Media Marketing Training">
+            <h2>Social Media Marketing Training</h2>
+            <p>Learn how to market effectively on Facebook, Instagram, WhatsApp, and other social platforms.</p>
+            <p class="price">Price: $80</p>
+            <button class="join-button">Join Now</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Floating Buttons Section -->
+<div class="floating-buttons">
+    <button id="create-website">Create Your Website</button>
+    <button id="hire-developer">Hire a Web Developer</button>
+</div>
+
+<!-- Cart Section -->
+<div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button id="checkout">Checkout</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 eBook and Training Store | All Rights Reserved</p>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
